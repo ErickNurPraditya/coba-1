@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basevo</title>
+<link rel="stylesheet" href="register.css">
+
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: 600px;
+    width: 800px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.fromh2{
+    font-size: 3rem;
+    font-family: 'Arial Narrow Bold',sans-serif;
+    margin: 40px;
+}
+.form a{
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+}
+
+ .input-password svg{
+position: absolute;
+top: 0;
+left: 5px;
+}
+
+
+.box{
+    padding: 12px;
+    width: 65%;
+    margin: 15px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+}
+
+
+.button input{
+    padding: 12px;
+    width: 250px;
+    margin-top: 40px;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border-radius: 20px;
+}
+
+
+.side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color:white ;
+    background: linear-gradient(180deg, #808080 45.83%, #393E46 99.99%, rgba(143, 143, 143, 0.00) 100%);
+}
+
+.form1{
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #808080 45.83%, #393E46 99.99%, rgba(143, 143, 143, 0.00) 100%);
+}
+
+.side h2{
+    font-size: 2rem;
+    margin: 4px;
+    font-family:  'Arial Narrow Bold', sans-serif;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+
+}
+.side h3{
+    font-size: 0.80rem;
+    font-family: 'Arial Narrow Bold', sans-serif ;
+    margin: 3px;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.side img {
+    width: 350px;
+    height: 350px;
+    
+    
+}
+</style>
+<body>
+    <div class="container">
+       <div class="container">
+        <form action="" class="form">
+            <h2>Sign in to Basevo</h2>
+            <input type="email" name="email" class="box" placeholder="Email" required>
+            <input type="password" name="password" class="box" placeholder="Password" required>
+            <input type="password" name="password" class="box" placeholder="Confirm Password" required>
+            <div class="button">
+                <a href="login.html"> <input type="button" value="Create Account" required></a>
+                </div>
+                <p> Do you have an account ? <a href="login.html" style="font-weight: bold;">Log in </a></p>
+        </form>
+    
+        <div class="side">
+            <form action="" class="form1">
+               
+            <h2>Create account</h2>
+            <h3>Create a free account and let's read interesting sports articles</h3>
+            <img align="center"  src="Jobriver_-_3D_illustration-removebg-preview.png" >
+        </form>
+        </div>
+       </div>
+    </div>  
+</body>
+</html>

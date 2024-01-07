@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportv</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: 600px;
+    width: 800px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.fromh2{
+    font-size: 3rem;
+    font-family: 'Arial Narrow Bold',sans-serif;
+    margin: 40px;
+}
+
+ .input-password svg{
+position: absolute;
+top: 0;
+left: 5px;
+}
+
+
+.box{
+    padding: 12px;
+    width: 65%;
+    margin: 15px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+}
+
+.form a{
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+}
+
+.form .button input{
+    padding: 12px;
+    width: 250px;
+    margin-top: 40px;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border-radius: 20px; 
+    
+    
+}
+
+.side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color:white ;
+    background: linear-gradient(180deg, #808080 45.83%, #334A52 99.98%, #393E46 99.99%, rgba(143, 143, 143, 0.00) 100%);
+}
+
+.form1{
+    align-items: center;
+    justify-content: center;
+}
+.form1 h2{
+    font-size: 2rem;
+    margin: 50px;
+font-family:  'Arial Narrow Bold', sans-serif;
+color: #FFFFFF;
+align-items: center;
+justify-content: center;
+top: 10vh;
+}
+.side h2{
+    font-size: 2rem;
+    margin: 50px;
+font-family:  'Arial Narrow Bold', sans-serif;
+color: #FFFFFF;
+align-items: center;
+justify-content: center;
+top: 20vh;
+
+}
+
+
+.side img {
+    width: 350px;
+    height: 350px;
+    margin-right: 20px;
+    position: relative;
+    top: -20vh;
+}
+    
+
+</style>
+<body>
+    <div class="container">
+       <div class="container">
+        <form action="" class="form">
+            <h2>log in</h2>
+            <input type="email" name="email" class="box" placeholder="Email" required>
+            <input type="password" name="password" class="box" placeholder="Password" required >
+            <div class="button">
+            <a href="dashboard-admin.html"> <input type="button" value="Login"></a>
+            </div>
+        </form>
+    
+        <div class="side">
+            <form action="" class="form1">
+            <h2>Welcome back to Basevo</h2>
+            <img align="right" src="Jobriver_-_3D_illustration-removebg-preview.png" >
+        </form>
+        </div>
+       </div>
+    </div>  
+</body>
+</html>

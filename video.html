@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<style>
+  *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+  .container{
+    position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  }
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    height: 70px;
+    top: 0;
+}
+.logo img{
+    font-size: 60px;
+    float: left;
+    height: 50px;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-right: 650px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+list-style: none;
+margin: 0px 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    position:relative ;
+}
+.search-box{
+    height: 25px;
+    display: flex;
+    align-items: center;
+    background-color: #EEEEEE;
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+.search-box input{
+    border: none;
+    outline: none;
+    color: black;
+    background-color: transparent;
+}
+.kanan{
+    margin-right: 10px;
+}
+.small-img-row{
+  display: flex;
+  background: #efefef;
+  margin: 20px 0;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  height: 46vh;
+}
+.small-img{
+  position: relative;
+}
+.small-img img{
+  width: 450px;
+  margin-left: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 1px #0f0f0f;
+}
+.small-img i{
+  font-size: 40px;
+  color: #EEEEEE;
+  width: 100px;
+  position: absolute;
+  left: 65%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+.small-img-row p{
+  margin-left: 80px;
+  color: #0f0f0f;
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.video-player{
+  margin-top: 20vh;
+  width: 60%;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  z-index: 20;
+  border-radius: 20px;
+}
+.video-player:hover{
+  background-color: rgba(255, 255, 255, 0.10);
+}
+video:focus{
+  outline: none;
+}
+video{
+  border-radius: 30px;
+} 
+.video-player i{
+  position: absolute;
+  font-size: 23px;
+  top: 20px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+  color: white;
+}
+.footer{
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 1;
+    width: 100%;
+    height: 50px;
+    margin-top: 140px;
+
+}
+</style>
+<body>
+  <div class="contianer">
+    <div class="navbar">
+      <div class="logo">
+      <img src="logo_part.2-removebg-preview.png" alt="Basevo" >
+      Basevo
+      </div>
+      <div class="search">
+          <div class="search-box">
+              <div class="search-input"><input type="text" name="" placeholder="Search...."></div>
+              <div class="search-icon"><i class="bi bi-search" style="color: black;"></i></div>
+          </div>
+      </div>
+      <ul class="kanan">
+              <li><a href="homepage.02.html">Home</a></li>
+              <li><a href="video.html">Video</a></li>
+              <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </div>
+        <!-- video pertama-->
+        <div class="small-img-row">
+          <div class="small-img">
+              <img src="download (1).jpeg" width="100%">
+              <i class="fa-solid fa-play" onclick="playVideo('WhatsApp Video 2023-11-21 at 19.55.41_9f1da9a2.mp4')"></i>
+          </div>
+          <p>(Sepakbola)</p>
+          <p>Latihan Teknik Dasar Passing!</p>
+        </div>
+        <div class="video-player" id="videoPlayer">
+          <video width="100%" controls autoplay id="myVideo">
+            <source src="WhatsApp Video 2023-11-21 at 19.55.41_9f1da9a2.mp4" type="video/mp4">
+          </video>
+          <i class="fa-solid fa-circle-xmark" onclick="stopVideo()"></i>
+        </div>
+    
+        <script>
+          var videoPlayer = document.getElementById("videoPlayer");
+          var myVideo = document.getElementById("myVideo");
+    
+          function stopVideo(){
+            videoPlayer.style.display = "none";
+          }
+    
+          function playVideo(file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block"
+          }
+        </script>
+    
+
+        <!-- video kedua -->
+
+        
+         <div class="small-img-row">
+          <div class="small-img">
+              <img src="download (1).jpeg" width="100%">
+              <i class="fa-solid fa-play" onclick="playVideo('WhatsApp Video 2023-11-21 at 20.08.37_6c337316.mp4')"></i>
+          </div>
+          <p>(Sepakbola)</p>
+          <p>Latihan Teknik Dasar Kontrol!</p>
+        </div>
+        <div class="video-player" id="videoPlayer">
+          <video width="100%" controls autoplay id="myVideo">
+            <source src="WhatsApp Video 2023-11-21 at 20.08.37_6c337316.mp4" type="video/mp4">
+          </video>
+          <i class="fa-solid fa-circle-xmark" onclick="stopVideo()"></i>
+        </div>
+    
+        <script>
+          var videoPlayer = document.getElementById("videoPlayer");
+          var myVideo = document.getElementById("myVideo");
+    
+          function stopVideo(){
+            videoPlayer.style.display = "none";
+          }
+    
+          function playVideo(file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block"
+          }
+        </script>
+    
+            <!-- video ketiga -->
+    
+            
+        <div class="small-img-row">
+          <div class="small-img">
+              <img src="download (1).jpeg" width="100%">
+              <i class="fa-solid fa-play" onclick="playVideo('WhatsApp Video 2023-11-21 at 20.10.08_2706120b.mp4')"></i>
+          </div>
+          <p>(Sepakbola)</p>
+          <p>Latihan Teknik Dasar Shooting!</p>
+        </div>
+        <div class="video-player" id="videoPlayer">
+          <video width="100%" controls autoplay id="myVideo">
+            <source src="WhatsApp Video 2023-11-21 at 20.10.08_2706120b.mp4" type="video/mp4">
+          </video>
+          <i class="fa-solid fa-circle-xmark" onclick="stopVideo()"></i>
+        </div>
+    
+        <script>
+          var videoPlayer = document.getElementById("videoPlayer");
+          var myVideo = document.getElementById("myVideo");
+    
+          function stopVideo(){
+            videoPlayer.style.display = "none";
+          }
+    
+          function playVideo(file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block"
+          }
+        </script>
+        
+            <!-- video keempat -->
+    
+             
+        <div class="small-img-row">
+          <div class="small-img">
+              <img src="Volleyball.jpeg" width="100%">
+              <i class="fa-solid fa-play" onclick="playVideo('WhatsApp Video 2023-11-21 at 20.33.21_2a2d36a5.mp4')"></i>
+          </div>
+          <p>(Voli)</p>
+          <p>Latihan Teknik Dasar Passing (bawah)!</p>
+        </div>
+        <div class="video-player" id="videoPlayer">
+          <video width="100%" controls autoplay id="myVideo">
+            <source src="WhatsApp Video 2023-11-21 at 20.33.21_2a2d36a5.mp4" type="video/mp4">
+          </video>
+          <i class="fa-solid fa-circle-xmark" onclick="stopVideo()"></i>
+        </div>
+    
+        <script>
+          var videoPlayer = document.getElementById("videoPlayer");
+          var myVideo = document.getElementById("myVideo");
+    
+          function stopVideo(){
+            videoPlayer.style.display = "none";
+          }
+    
+          function playVideo(file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block"
+          }
+        </script>
+    
+            <!-- video kelima -->
+    
+            
+        <div class="small-img-row">
+          <div class="small-img">
+              <img src="download.jpeg" width="100%">
+              <i class="fa-solid fa-play" onclick="playVideo('WhatsApp Video 2023-11-21 at 21.16.25_2d07cdb3.mp4')"></i>
+          </div>
+          <p>(Basket)</p>
+          <p>Latihan Teknik Dasar Shooting!</p>
+        </div>
+        <div class="video-player" id="videoPlayer">
+          <video width="100%" controls autoplay id="myVideo">
+            <source src="WhatsApp Video 2023-11-21 at 21.16.25_2d07cdb3.mp4" type="video/mp4">
+          </video>
+          <i class="fa-solid fa-circle-xmark" onclick="stopVideo()"></i>
+        </div>
+    
+        <script>
+          var videoPlayer = document.getElementById("videoPlayer");
+          var myVideo = document.getElementById("myVideo");
+    
+          function stopVideo(){
+            videoPlayer.style.display = "none";
+          }
+    
+          function playVideo(file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block"
+          }
+        </script>
+        <a id="contact">
+             <div class="footer">
+              <p><i class="bi bi-c-circle"></i>2023 by erick </p>
+              <p>telepon: (+62) 03482468348 | email: ericknp783@gmail.com</p>
+           </div>
+           </a>
+  </div>
+</body>
+</html>

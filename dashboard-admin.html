@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+        list-style: none;
+    }
+    body{
+        min-height: 100vh;
+    }
+    .sidebar{
+        position: fixed;
+        background: grey;
+        width: 22vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .brand{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid lightgrey;
+        margin-bottom: 10px;
+        color: white;
+        cursor: pointer;
+    }
+    .brand i{
+        font-size: 20px;
+    }
+    .brand img{
+        height: 50px;
+    }
+    .sidebar ul li{
+        font-size: 24px;
+        padding: 10px 40px;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .sidebar ul li:hover{
+     background: rgb(0, 0, 0, 0.2);
+     color: white;
+    }
+    .container{
+    position: absolute;
+    right: 0 ;
+    width: 78vw;
+    height: 100vh;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 78vw;
+        height: 10vh;
+        background: black;
+        display: inline;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+    .header h2{
+        color:white;
+        margin-top: 15px;
+        margin-left: 30px;
+        font-size: 30px;
+    }
+    .content{
+        position: relative;
+        margin-top: 10vh;
+    }
+    .cards{
+        padding: 15px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 150px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .card{
+        width: 330px;
+        height: 180px;
+        background: lightgrey;
+        margin: 15px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 20px;
+
+    }
+    .icon{
+        color: grey;
+        font-size: 40px;
+    }
+    .content2{
+        position: relative;
+        margin-top: 10px;
+    }
+    .cards2{
+        padding: 15px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .card2{
+        width: 330px;
+        height: 180px;
+        background: lightgrey;
+        margin: 15px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 20px;
+
+    }
+    .icon2{
+        color: grey;
+        font-size: 40px;
+    }
+    
+</style>
+<body>
+    <div class="sidebar">
+        <div class="brand">
+            <img src="logo_part.2-removebg-preview.png" alt="">&nbsp;&nbsp;
+            <h1>Basevo</h1>
+        </div>
+        <ul>
+            <a href="dashboard-admin.html"><li><i class="fa-solid fa-chart-line"></i>&nbsp;&nbsp;<span>Dashboard</span></li></a>
+            <a href="manageuser.html"><li><i class="fa-solid fa-user"></i>&nbsp;&nbsp;<span>Manage User</span></li></a>
+            <a href="manageartikel.html"><li><i class="fa-regular fa-newspaper"></i>&nbsp;&nbsp;<span>Manage Artikel</span></li></a>
+            <a href="ManageKomen.html"><li><i class="fa-solid fa-comment"></i>&nbsp;&nbsp;<span>Manage Komentar</span></li></a>
+            <a href="login-admin.html"><li> <i class="fa-solid fa-right-from-bracket"></i>&nbsp;&nbsp;<span>Log out</span></li></a>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h2>Dashboard Admin</h2>     
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1>350</h1>
+                        <h3>User</h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>10</h1>
+                        <h3>Artikel</h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-regular fa-newspaper"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="cards2">
+                <div class="card2">
+                    <div class="box">
+                        <h1>350</h1>
+                        <h3>User</h3>
+                    </div>
+                    <div class="icon2">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="box">
+                        <h1>10</h1>
+                        <h3>Artikel</h3>
+                    </div>
+                    <div class="icon2">
+                        <i class="fa-regular fa-newspaper"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
